@@ -1,17 +1,18 @@
-const http = require('http');
+var express = require('express')
+var app = express()
+ 
+app.get('/', function (req, res) {
+  res.send('GET Hello World')
+})
 
-const hostname = '127.0.0.1';
-const port = 3000;
+app.post('/', function (req, res) {
+  res.send('POST Hello World')
+})
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  if(req.url === '/mail/process'){
-  	res.end('Mail process path\n');
-  }
-  res.end('Hola Mundo\n');
-});
+app.post('/mail/process', (req, res) => {
+	res.send('POST /mail/process')
+})
 
-server.listen(port, hostname, () => {
-  console.log(`El servidor se está ejecutando en http://${hostname}:${port}/`);
-});
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!')
+})
