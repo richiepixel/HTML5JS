@@ -1,0 +1,19 @@
+{
+  "name": "my-personal-page",
+  "version": "1.0.0",
+  "description": "My personal page",
+  "main": "createNodeServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richiepixel/HTML5JS.git"
+  },
+  "author": "Richie Cedillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richiepixel/HTML5JS/issues"
+  },
+  "homepage": "https://github.com/richiepixel/HTML5JS#readme"
+}
