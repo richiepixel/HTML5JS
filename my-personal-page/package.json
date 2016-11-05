@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/richiepixel/HTML5JS/issues"
   },
-  "homepage": "https://github.com/richiepixel/HTML5JS#readme"
+  "homepage": "https://github.com/richiepixel/HTML5JS#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
